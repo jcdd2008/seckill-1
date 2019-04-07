@@ -80,7 +80,8 @@ public class GoodsController {
 //      return "goods_list";
 
 
-        SpringWebContext ctx = new SpringWebContext(request, response, request.getServletContext(), request.getLocale(), model.asMap(), applicationContext);
+        SpringWebContext ctx = new SpringWebContext(request, response, request.getServletContext(),
+                request.getLocale(), model.asMap(), applicationContext);
         //手动渲染
         html = thymeleafViewResolver.getTemplateEngine().process("goods_list", ctx);
 

@@ -1,4 +1,4 @@
-package com.shallowan.seckill.config;
+package com.shallowan.seckill;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

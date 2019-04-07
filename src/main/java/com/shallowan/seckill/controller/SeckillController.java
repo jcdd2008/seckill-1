@@ -34,6 +34,7 @@ import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author ShallowAn
@@ -82,7 +83,7 @@ public class SeckillController implements InitializingBean {
     @Autowired
     private MQSender sender;
 
-    private Map<Long, Boolean> localOverMap = new HashMap<>();
+    private static ConcurrentHashMap localOverMap = new ConcurrentHashMap<>();
 
     /**
      * 系统初始化
