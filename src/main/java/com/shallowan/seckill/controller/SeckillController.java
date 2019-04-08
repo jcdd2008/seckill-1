@@ -83,7 +83,7 @@ public class SeckillController implements InitializingBean {
     @Autowired
     private MQSender sender;
 
-    private static ConcurrentHashMap localOverMap = new ConcurrentHashMap<>();
+    private static ConcurrentHashMap<Long,Boolean> localOverMap = new ConcurrentHashMap<>();
 
     /**
      * 系统初始化
